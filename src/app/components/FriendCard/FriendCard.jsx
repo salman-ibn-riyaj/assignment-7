@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FriendCard = ({ friend }) => {
@@ -8,7 +9,7 @@ const FriendCard = ({ friend }) => {
     overdue: "bg-red-500 text-white",
   };
   return (
-    <div className="border border-gray-100 rounded-2xl p-5 flex flex-col items-center gap-2 bg-slate-200">
+    <Link href={`/${friend.id}`} className="border border-gray-100 rounded-2xl p-5 flex flex-col items-center gap-2 bg-slate-200">
       <Image
         width={60}
         height={60}
@@ -38,7 +39,7 @@ const FriendCard = ({ friend }) => {
       >
         {friend.status.replace("_", "")}
       </div>
-    </div>
+    </Link>
   );
 };
 

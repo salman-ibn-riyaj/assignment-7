@@ -1,7 +1,6 @@
-import Banner from "@/components/Banner/Banner";
-import Footer from "@/components/Footer/Footer";
-import YourFriends from "@/components/YourFriends/YourFriends";
-import Image from "next/image";
+import Banner from "@/app/components/Banner/Banner";
+import YourFriends from "@/app/components/YourFriends/YourFriends";
+
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
       <main className="">
         <Banner></Banner>
         <YourFriends></YourFriends>
-        <Footer></Footer>
+        
         
         
       </main>
