@@ -3,7 +3,7 @@ import FriendCard from "../FriendCard/FriendCard";
 
 const YourFriends = async() => {
 
-    const res = await fetch('http://localhost:3000/friendsData.json',{cache:'no-store'});
+    const res = await fetch('https://assignment-7-egtp.vercel.app//friendsData.json',{cache:'no-store'});
     const friends = await res.json();
     console.log(friends);
     return (
