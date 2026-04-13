@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "picture": "https://i.ibb.co.com/Gf6BtHNN/virat-kohli.avif",
+    "email": "john@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "Ayasha Rahman",
+    "picture": "https://i.ibb.co.com/Jw3HrVrx/Babar-Azam.png",
+    "email": "ayasha.r@gmail.com",
+    "days_since_contact": 3,
+    "status": "on_track",
+    "tags": ["work", "mentor"],
+    "bio": "My team lead at the office. Always helpful with career advice.",
+    "goal": 7,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 3,
+    "name": "Carlos Mendes",
+    "picture": "https://i.ibb.co.com/F48LzW6y/Ben-Stokes.jpg",
+    "email": "carlos.mendes@outlook.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["childhood friend", "distant"],
+    "bio": "Grew up on the same street. Lost touch after he moved abroad.",
+    "goal": 21,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 4,
+    "name": "Priya Nair",
+    "picture": "https://i.ibb.co.com/mrGTFH32/Pet-Cummins.avif",
+    "email": "priya.nair@yahoo.com",
+    "days_since_contact": 1,
+    "status": "on_track",
+    "tags": ["family", "close friend"],
+    "bio": "Cousin. We talk almost every day about everything.",
+    "goal": 3,
+    "next_due_date": "2025-07-16"
+  },
+  {
+    "id": 5,
+    "name": "James Okafor",
+    "picture": "https://i.ibb.co.com/3mvYpSyp/Rashid-Khan.jpg",
+    "email": "j.okafor@proton.me",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["networking", "tech"],
+    "bio": "Met at a developer conference in 2022. Great conversations about AI.",
+    "goal": 30,
+    "next_due_date": "2025-06-30"
+  },
+  {
+    "id": 6,
+    "name": "Lena Hoffmann",
+    "picture": "https://i.ibb.co.com/prdw3jTM/Jos-Buttler.jpg",
+    "email": "lena.h@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost_due",
+    "tags": ["college", "study group"],
+    "bio": "Study partner from my web dev bootcamp. Very talented designer.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 7,
+    "name": "Omar Faruk",
+    "picture": "https://i.ibb.co.com/VWpv1cJD/rohit-sharma-ap.jpg",
+    "email": "omar.faruk@bd.com",
+    "days_since_contact": 8,
+    "status": "almost_due",
+    "tags": ["work", "colleague"],
+    "bio": "Works in the same building. Usually grab lunch together on Fridays.",
+    "goal": 14,
+    "next_due_date": "2025-07-23"
+  },
+  {
+    "id": 8,
+    "name": "Sofia Esposito",
+    "picture": "https://i.ibb.co.com/67FHJH1J/Kagiso-Rabada.jpg",
+    "email": "sofia.e@icloud.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["travel friend", "distant"],
+    "bio": "Met backpacking through Southeast Asia. Keeps life interesting.",
+    "goal": 30,
+    "next_due_date": "2025-06-25"
+  },
+  {
+    "id": 9,
+    "name": "David Kim",
+    "picture": "https://i.ibb.co.com/tpBzKRLz/Kane-Williamson.webp",
+    "email": "david.kim@naver.com",
+    "days_since_contact": 2,
+    "status": "on_track",
+    "tags": ["family", "brother"],
+    "bio": "Older brother. We check in with each other regularly.",
+    "goal": 7,
+    "next_due_date": "2025-07-17"
+  },
+  {
+    "id": 10,
+    "name": "Nadia Volkov",
+    "picture": "https://i.ibb.co.com/pvBNyB1F/Shakib-Al-Hasan.webp",
+    "email": "nadia.v@mail.ru",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["online friend", "gaming"],
+    "bio": "Met in an online game three years ago. Now a genuine close friend.",
+    "goal": 14,
+    "next_due_date": "2025-07-05"
+  }
+]
