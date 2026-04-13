@@ -9,9 +9,9 @@ export const InteractionProvider = ({ children }) => {
 
   const addInteraction = (type, friendName) => {
     const newInteraction = {
-      type,        // "call" / "text" / "video"
+      type, 
       friendName,
-      date: new Date().toDateString(), // "Tue Apr 14 2026"
+      date: new Date().toDateString(), 
     };
     setInteractions((prev) => [newInteraction, ...prev]);
   };

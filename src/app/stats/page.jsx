@@ -1,11 +1,56 @@
+"use client";
+import { useInteraction } from "@/context/InteractionContext";
+import { Pie, PieChart, Legend, Tooltip } from "recharts";
+
+const StatsPage = () => {
+  const { interactions } = useInteraction();
 
 
-const page = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  const counts = { call: 0, text: 0, video: 0 };
+  interactions.forEach((item) => {
+    if (counts[item.type] !== undefined) counts[item.type]++;
+  });
+
+  const data = [
+    { name: "Call", value: counts.call, fill: "#1a1a2e" },
+    { name: "Text", value: counts.text, fill: "#7c3aed" },
+    { name: "Video", value: counts.video, fill: "#16a34a" },
+  ].filter((d) => d.value > 0);
+
+  return (
+    <div className="max-w-7xl mx-auto py-10 px-4">
+      <h1 className="text-2xl font-bold mb-6">Friendship Analytics</h1>
+
+      <div className="border border-gray-200 rounded-xl p-6 shadow-sm">
+        <p className="text-gray-500 mb-4">By Interaction Type</p>
+
+        {data.length === 0 ? (
+          <p className="text-gray-400">No call text or video history found!</p>
+        ) : (
+          <PieChart
+            style={{
+              width: "100%",
+              maxWidth: "100%",
+              margin:'10 auto',
+              maxHeight: "80vh",
+              aspectRatio: 1,
+            }}
+          >
+            <Pie
+              data={data}
+              innerRadius="60%"
+              outerRadius="80%"
+              cornerRadius="50%"
+              paddingAngle={5}
+              dataKey="value"
+            />
+            <Tooltip />
+            <Legend />
+          </PieChart>
+        )}
+      </div>
+    </div>
+  );
 };
 
-export default page;
+export default StatsPage;

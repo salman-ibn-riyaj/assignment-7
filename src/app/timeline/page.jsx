@@ -24,9 +24,9 @@ const TimelinePage = () => {
         {interactions.map((item, i) => (
           <div
             key={i}
-            className="flex items-center gap-4 border border-gray-200 rounded-xl p-4 shadow-sm"
+            className="flex items-center gap-4 border border-gray-200 rounded-md p-4 shadow-sm"
           >
-            <span className="text-gray-600 text-3xl shrink-0">{icons[item.type]}</span>
+            <span className="text-gray-600 text-3xl">{icons[item.type]}</span>
             <div>
               <p>
                 <strong className="capitalize">{item.type}</strong> with{" "}

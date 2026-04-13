@@ -12,11 +12,11 @@ const icons = {
 
 const QuickCheckIn = ({ friendName }) => {
   const { addInteraction } = useInteraction();
-  const router = useRouter();
+
 
   const handleClick = (type) => {
     addInteraction(type, friendName);
-    router.push("/timeline");
+
   };
 
   return (
