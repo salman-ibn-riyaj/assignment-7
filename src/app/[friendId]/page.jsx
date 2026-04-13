@@ -1,8 +1,9 @@
+import QuickCheckIn from "@/components/QuickCheckIn/QuickCheckIn";
 import Image from "next/image";
 import { FaBoxArchive } from "react-icons/fa6";
-import { IoIosCall } from "react-icons/io";
-import { MdDeleteForever, MdOutlineTextsms } from "react-icons/md";
-import { PiVideoCamera } from "react-icons/pi";
+
+import { MdDeleteForever } from "react-icons/md";
+
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 
 const FriendDetailsPage = async ({ params }) => {
@@ -113,35 +114,7 @@ const FriendDetailsPage = async ({ params }) => {
           <button className="btn">Edit</button>
         </div>
 
-        <div className="shadow p-4 rounded-md my-4">
-          <div className="space-y-2">
-            <h2 className="font-bold mb-4">Quick Check In</h2>
-          </div>
-
-
-          <div className="space-x-2 flex flex-col md:flex-row gap-2">
-            <button className="text-center mr-3 btn">
-              <span>
-                <IoIosCall />
-              </span> <br />
-              <p>Call</p>
-            </button>
-
-            <button className="text-center mr-3 btn">
-              <span>
-               <MdOutlineTextsms />
-              </span> <br />
-              <p>Text</p>
-            </button>
-
-            <button className="text-center mr-3 btn">
-              <span>
-                <PiVideoCamera />
-              </span> <br />
-              <p>Video</p>
-            </button>
-          </div>
-        </div>
+        <QuickCheckIn friendName={friend.name} />
       </div>
     </div>
   );
