@@ -14,7 +14,7 @@ const Banner = () => {
 
       {/* banner card div starts from here bro!  */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 max-w-7xl mx-auto">
         <div className="text-center shadow p-2">
           <h3 className="font-semibold text-xl">10</h3>
           <p className="text-gray-700">Total Friends</p>
@@ -33,7 +33,7 @@ const Banner = () => {
         </div>
         
       </div>
-      <hr className="text-gray-200 mt-8 mb-3 container mx-auto" />
+      <hr className="text-gray-200 mt-8 mb-3 max-w-7xl mx-auto" />
       
     </div>
   );
