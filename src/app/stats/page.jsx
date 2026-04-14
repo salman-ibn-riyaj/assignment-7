@@ -39,20 +39,22 @@ const StatsPage = () => {
 
   return (
     <div className="w-full px-4 py-3">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-2xl font-bold mb-6">Friendship Analytics</h1>
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-2xl font-bold mb-4">Friendship Analytics</h1>
 
         <div className="w-full shadow-sm rounded-xl p-4 border border-gray-100 flex flex-col items-center">
           <p className="text-gray-500 mb-2 self-start">By Interaction Type</p>
 
           {data.length === 0 ? (
-            <p className="text-gray-400">No call text or video history found!</p>
+            <p className="text-gray-400">
+              No call text or video history found!
+            </p>
           ) : (
-            <PieChart width={chartSize.width} height={chartSize.height}>
+            <PieChart width={chartSize.width} height={chartSize.height} margin={{ top: -20, left: 0, right: 0, bottom: 0 }}>
               <Pie
                 data={data}
                 cx="50%"
-                cy="30%"
+                cy="50%"
                 innerRadius={radius * 0.8}
                 outerRadius={radius}
                 cornerRadius={10}
@@ -60,7 +62,13 @@ const StatsPage = () => {
                 dataKey="value"
               />
               <Tooltip />
-              <Legend wrapperStyle={{ paddingTop: '20px' }} />
+              <Legend
+                verticalAlign="bottom"
+                align="center"
+                iconType="square"
+                layout="horizontal"
+                wrapperStyle={{ paddingTop: "0px",}}
+              />
             </PieChart>
           )}
         </div>
