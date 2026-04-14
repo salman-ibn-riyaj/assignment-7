@@ -3,6 +3,7 @@ import { useInteraction } from "@/context/InteractionContext";
 import { useRouter } from "next/navigation";
 import { FaPhone, FaVideo } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
+import { toast } from "react-toastify";
 
 const icons = {
   call: <FaPhone size={20} />,
@@ -13,9 +14,15 @@ const icons = {
 const QuickCheckIn = ({ friendName }) => {
   const { addInteraction } = useInteraction();
 
+  const messages = {
+  call: (name) => `${name} is called`,
+  text: (name) => `${name} is texted`,
+  video: (name) => `${name} is video called`,
+};
 
   const handleClick = (type) => {
     addInteraction(type, friendName);
+    toast.success(messages[type](friendName));
 
   };
 
