@@ -17,7 +17,7 @@ const FriendCard = ({ friend }) => {
         alt={friend.name}
         className="w-18 h-18 rounded-full object-cover"
       />
-      <p className="font-medium text-sm text-gray-800 text-center">
+      <p className="text-xl font-bold text-gray-800 text-center">
         {friend.name}
       </p>
       <p className="text-xs text-gray-400">{friend.days_since_contact}d ago</p>
