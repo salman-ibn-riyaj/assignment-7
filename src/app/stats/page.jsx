@@ -21,32 +21,30 @@ const StatsPage = () => {
     <div className="max-w-7xl mx-auto py-10 px-4">
       <h1 className="text-2xl font-bold mb-6">Friendship Analytics</h1>
 
-      <div className="border border-gray-200 rounded-xl p-6 shadow-sm">
+      <div className="shadow-sm rounded-xl p-6">
         <p className="text-gray-500 mb-4">By Interaction Type</p>
 
         {data.length === 0 ? (
           <p className="text-gray-400">No call text or video history found!</p>
         ) : (
           <PieChart
-            style={{
-              width: "100%",
-              maxWidth: "100%",
-              margin:'10 auto',
-              maxHeight: "80vh",
-              aspectRatio: 1,
-            }}
-          >
-            <Pie
-              data={data}
-              innerRadius="60%"
-              outerRadius="80%"
-              cornerRadius="50%"
-              paddingAngle={5}
-              dataKey="value"
-            />
-            <Tooltip />
-            <Legend />
-          </PieChart>
+    width={1000}
+    height={400}
+    style={{ margin: "0 auto" }}
+  >
+    <Pie
+      data={data}
+      cx={300}
+      cy={180}
+      innerRadius={130}
+      outerRadius={180}
+      cornerRadius={10}
+      paddingAngle={5}
+      dataKey="value"
+    />
+    <Tooltip />
+    <Legend />
+  </PieChart>
         )}
       </div>
     </div>
