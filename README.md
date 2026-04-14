@@ -37,31 +37,5 @@ Visualize your interaction habits with a responsive donut chart that breaks down
 
 🔗 [View Live on Vercel](https://assignment-7-egtp.vercel.app)
 
----
-
-## 📁 Project Structure
-
-```
-src/
-├── app/
-│   ├── YourFriends/
-│   │   └── [friendId]/
-│   │       └── page.jsx       # Friend details page
-│   ├── timeline/
-│   │   └── page.jsx           # Interaction timeline
-│   ├── stats/
-│   │   └── page.jsx           # Friendship analytics
-│   └── layout.js
-├── components/
-│   ├── QuickCheckIn/
-│   ├── FriendCard/
-│   ├── Navbar/
-│   ├── Banner/
-│   └── Footer/
-└── context/
-    └── InteractionContext.js  # Global state
-```
-
----
 
 © 2026 KeenKeeper. All rights reserved.
