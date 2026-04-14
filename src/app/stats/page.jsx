@@ -38,12 +38,12 @@ const StatsPage = () => {
   const radius = Math.min(chartSize.width, chartSize.height) * 0.28;
 
   return (
-    <div className="w-full px-4 py-10">
+    <div className="w-full px-4 py-3">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-2xl font-bold mb-6">Friendship Analytics</h1>
 
-        <div className="w-full shadow-sm rounded-xl p-6 border border-gray-100 flex flex-col items-center">
-          <p className="text-gray-500 mb-4 self-start">By Interaction Type</p>
+        <div className="w-full shadow-sm rounded-xl p-4 border border-gray-100 flex flex-col items-center">
+          <p className="text-gray-500 mb-2 self-start">By Interaction Type</p>
 
           {data.length === 0 ? (
             <p className="text-gray-400">No call text or video history found!</p>
@@ -52,15 +52,15 @@ const StatsPage = () => {
               <Pie
                 data={data}
                 cx="50%"
-                cy="50%"
-                innerRadius={radius * 0.7}
+                cy="30%"
+                innerRadius={radius * 0.8}
                 outerRadius={radius}
                 cornerRadius={10}
                 paddingAngle={5}
                 dataKey="value"
               />
               <Tooltip />
-              <Legend />
+              <Legend wrapperStyle={{ paddingTop: '20px' }} />
             </PieChart>
           )}
         </div>
