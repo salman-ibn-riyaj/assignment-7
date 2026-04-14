@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "John Doe",
+    "name": "Virat Kohli",
     "picture": "https://i.ibb.co.com/Gf6BtHNN/virat-kohli.avif",
     "email": "john@example.com",
     "days_since_contact": 12,
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "name": "Ayasha Rahman",
+    "name": "Babar Azam",
     "picture": "https://i.ibb.co.com/Jw3HrVrx/Babar-Azam.png",
     "email": "ayasha.r@gmail.com",
     "days_since_contact": 3,
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "name": "Carlos Mendes",
+    "name": "Ben Stokes",
     "picture": "https://i.ibb.co.com/F48LzW6y/Ben-Stokes.jpg",
     "email": "carlos.mendes@outlook.com",
     "days_since_contact": 30,
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "name": "Priya Nair",
+    "name": "Pet Cummins",
     "picture": "https://i.ibb.co.com/mrGTFH32/Pet-Cummins.avif",
     "email": "priya.nair@yahoo.com",
     "days_since_contact": 1,
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "name": "James Okafor",
+    "name": "Rashid Khan",
     "picture": "https://i.ibb.co.com/3mvYpSyp/Rashid-Khan.jpg",
     "email": "j.okafor@proton.me",
     "days_since_contact": 60,
@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "name": "Lena Hoffmann",
+    "name": "Jos Buttler",
     "picture": "https://i.ibb.co.com/prdw3jTM/Jos-Buttler.jpg",
     "email": "lena.h@gmail.com",
     "days_since_contact": 12,
@@ -73,7 +73,7 @@
   },
   {
     "id": 7,
-    "name": "Omar Faruk",
+    "name": "Rohit sharma",
     "picture": "https://i.ibb.co.com/VWpv1cJD/rohit-sharma-ap.jpg",
     "email": "omar.faruk@bd.com",
     "days_since_contact": 8,
@@ -85,7 +85,7 @@
   },
   {
     "id": 8,
-    "name": "Sofia Esposito",
+    "name": "Kagiso Rabada",
     "picture": "https://i.ibb.co.com/67FHJH1J/Kagiso-Rabada.jpg",
     "email": "sofia.e@icloud.com",
     "days_since_contact": 45,
@@ -97,7 +97,7 @@
   },
   {
     "id": 9,
-    "name": "David Kim",
+    "name": "Kane Williamson",
     "picture": "https://i.ibb.co.com/tpBzKRLz/Kane-Williamson.webp",
     "email": "david.kim@naver.com",
     "days_since_contact": 2,
@@ -109,7 +109,7 @@
   },
   {
     "id": 10,
-    "name": "Nadia Volkov",
+    "name": "Shakib Al Hasan",
     "picture": "https://i.ibb.co.com/pvBNyB1F/Shakib-Al-Hasan.webp",
     "email": "nadia.v@mail.ru",
     "days_since_contact": 18,
