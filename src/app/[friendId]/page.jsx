@@ -1,5 +1,6 @@
 import QuickCheckIn from "@/components/QuickCheckIn/QuickCheckIn";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import { FaBoxArchive } from "react-icons/fa6";
 
 import { MdDeleteForever } from "react-icons/md";
@@ -17,6 +18,10 @@ const FriendDetailsPage = async ({ params }) => {
   console.log(friends);
 
   const friend = friends.find((findedFrnd) => findedFrnd.id == friendId);
+
+  if(!friend){
+    notFound();
+  }
 
   const statusStyles = {
     almost_due: "bg-yellow-400 text-white",
